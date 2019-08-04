@@ -1,0 +1,8 @@
+steps:
+    - id: build
+      name: gcr.io/cloud-builders/docker
+      args: ["build", "--tag=gcr.io/${PROJECT_ID}/bluebudgetz/dashboard:${SHORT_SHA}", "--file=Dockerfile", "."]
+    - id: push
+      name: gcr.io/cloud-builders/docker
+      args: ["push", "gcr.io/${PROJECT_ID}/bluebudgetz/dashboard:${SHORT_SHA}"]
+      waitFor: [build]
