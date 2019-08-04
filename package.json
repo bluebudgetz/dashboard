@@ -1,6 +1,18 @@
 {
-  "name": "dashboard",
+  "name": "bluebudgetz-dashboard",
+  "description": "Bluebudgetz Dashboard",
   "version": "0.0.0",
+  "license": "GPL-3.0",
+  "author": {
+    "email": "arik@kfirs.com",
+    "name": "Arik Kfir",
+    "url": "https://www.kfirs.com"
+  },
+  "repository": "github:bluebudgetz/dashboard",
+  "bugs": {
+    "url": "https://github.com/bluebudgetz/dashboard/issues"
+  },
+  "homepage": "https://github.com/bluebudgetz/dashboard",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +21,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/cdk": "^8.1.2",
